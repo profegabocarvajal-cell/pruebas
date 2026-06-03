@@ -69,6 +69,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    margin-top: 30px;
     background: linear-gradient(135deg, rgba(75, 79, 82, 0.1), rgba(233, 238, 235, 0.2)), url('https://png.pngtree.com/thumb_back/fh260/background/20230718/pngtree-virtual-shopping-mall-stunning-e-commerce-website-on-laptop-brilliantly-rendered-image_3911932.jpg');
     background-size: cover;
     background-position: center;
