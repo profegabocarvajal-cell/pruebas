@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulo 4</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="" alt="Logo Estudiantes EM" class="logo">
+                <h1>Tienda On.line</h1>
+                <ul>
+                    <li><a href="tienda.html">Inicio</a></li>
+                    <li><a href="Articulo1.html">Articulo 1</a></li>
+                    <li><a href="Articulo2.html">Articulo 2</a></li>
+                    <li><a href="Articulo3.html">Articulo 3</a></li>
+                    <li><a href="Articulo4.html">Articulo 4</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count" class="cart-count">0</span></a></li>
+                    <li><a href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="videof">
+        <!-- El video de fondo -->
+        <video autoplay muted loop playsinline id="miVideo">
+            <source src="imgene/Vídeo promocional Azul Oscuro Producciones para agencias de viaje - Azul Oscuro Producciones (360p, h264).mp4" type="video/mp4">
+                Tu navegador no soporta video.
+        </video>
+
+        <!-- Contenido sobre el video -->
+        <div class="contenido">
+            <h1>Bienvenido al producto 4</h1>
+            <p>Aquí va un mensaje promocional para atraer a los clientes.</p>
+        </div>
+
+    </section>
+
+    <section class="carrusel">
+            <h2>Nuestras Marcas</h2>
+            <div class="carrusel-container">
+                <div class="carrusel-track">
+                    <img src="https://media.glassdoor.com/sqlm/10692/adidas-squarelogo-1499169651022.png" alt="Marca 1">
+                    <img src="https://p16-seeyou-useast5.capcutcdn-us.com/tos-useast5-i-2zwwjm3azk-tx/3405fc5e1f9d4790814b79e7d0598be1~tplv-2zwwjm3azk-image.image" alt="Marca 2">
+                    <img src="https://assets.turbologo.com/blog/es/2021/07/12023740/Gucci_logo.png" alt="Marca 3">
+                    <img src="https://assets.turbologo.com/blog/es/2021/07/12023736/Apple_logo-1.png" alt="marca 4">
+                    <img src="https://misedades.wordpress.com/wp-content/uploads/2013/05/nike-logo.jpg?w=640" alt="marca5">
+                    <img src="https://i.pinimg.com/564x/4d/6d/5f/4d6d5f80131f714132fd8b8f02d57ead.jpg" alt="marca 6">
+                    <img src="https://assets.turbologo.com/blog/es/2021/07/12023746/mini-logo.png" alt="marca 7">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2PbTtFaytJNqU-epYFYCAGwvspHjLdlvGRQ&s" alt="marca 8">
+                    <!-- Más marcas -->
+                </div>
+            </div>
+    </section>
+
+    <section class="articulos">
+        <h2>Productos Disponibles</h2>
+        <div class="productos-grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Zapatillas+Deportivas" alt="Zapatillas Deportivas">
+                <h3>Zapatillas Deportivas</h3>
+                <p>Zapatillas cómodas para actividades deportivas, ideales para running y gimnasio.</p>
+                <p class="precio">$59.99</p>
+                <button onclick="agregarAlCarrito('Zapatillas Deportivas', 59.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Camiseta+Algodón" alt="Camiseta Algodón">
+                <h3>Camiseta Algodón</h3>
+                <p>Camiseta de algodón orgánico, suave y transpirable para uso diario.</p>
+                <p class="precio">$19.99</p>
+                <button onclick="agregarAlCarrito('Camiseta Algodón', 19.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Pantalones+Jeans" alt="Pantalones Jeans">
+                <h3>Pantalones Jeans</h3>
+                <p>Pantalones de mezclilla clásicos, duraderos y versátiles para cualquier ocasión.</p>
+                <p class="precio">$39.99</p>
+                <button onclick="agregarAlCarrito('Pantalones Jeans', 39.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Bolso+Cuero" alt="Bolso Cuero">
+                <h3>Bolso Cuero</h3>
+                <p>Bolso de cuero genuino, elegante y espacioso para llevar tus essentials.</p>
+                <p class="precio">$79.99</p>
+                <button onclick="agregarAlCarrito('Bolso Cuero', 79.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Gorra+Baseball" alt="Gorra Baseball">
+                <h3>Gorra Baseball</h3>
+                <p>Gorra ajustable de béisbol, perfecta para protegerte del sol en actividades al aire libre.</p>
+                <p class="precio">$14.99</p>
+                <button onclick="agregarAlCarrito('Gorra Baseball', 14.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Vestido+Verano" alt="Vestido Verano">
+                <h3>Vestido Verano</h3>
+                <p>Vestido ligero y fresco para días calurosos, con diseño floral moderno.</p>
+                <p class="precio">$29.99</p>
+                <button onclick="agregarAlCarrito('Vestido Verano', 29.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Reloj+Digital" alt="Reloj Digital">
+                <h3>Reloj Digital</h3>
+                <p>Reloj digital resistente al agua con múltiples funciones y pantalla LED.</p>
+                <p class="precio">$49.99</p>
+                <button onclick="agregarAlCarrito('Reloj Digital', 49.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Chaqueta+Invierno" alt="Chaqueta Invierno">
+                <h3>Chaqueta Invierno</h3>
+                <p>Chaqueta acolchada para climas fríos, impermeable y con capucha.</p>
+                <p class="precio">$69.99</p>
+                <button onclick="agregarAlCarrito('Chaqueta Invierno', 69.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Mochila+Escolar" alt="Mochila Escolar">
+                <h3>Mochila Escolar</h3>
+                <p>Mochila resistente con múltiples compartimentos para estudiantes.</p>
+                <p class="precio">$24.99</p>
+                <button onclick="agregarAlCarrito('Mochila Escolar', 24.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Zapatillas+Formales" alt="Zapatillas Formales">
+                <h3>Zapatillas Formales</h3>
+                <p>Zapatillas elegantes para ocasiones formales, cómodas y estilizadas.</p>
+                <p class="precio">$89.99</p>
+                <button onclick="agregarAlCarrito('Zapatillas Formales', 89.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Zapatillas+Formales" alt="Zapatillas Formales">
+                <h3>Zapatillas Formales</h3>
+                <p>Zapatillas elegantes para ocasiones formales, cómodas y estilizadas.</p>
+                <p class="precio">$89.99</p>
+                <button onclick="agregarAlCarrito('Zapatillas Formales', 89.99)">Agregar al Carrito</button>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Zapatillas+Formales" alt="Zapatillas Formales">
+                <h3>Zapatillas Formales</h3>
+                <p>Zapatillas elegantes para ocasiones formales, cómodas y estilizadas.</p>
+                <p class="precio">$89.99</p>
+                <button onclick="agregarAlCarrito('Zapatillas Formales', 89.99)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="professional-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tienda Online Educativa</h3>
+                <p>Tu destino confiable para tecnología y accesorios. Calidad garantizada y servicio excepcional.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Facebook</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                    <li><a href="tienda.html">Inicio</a></li>
+                    <li><a href="Articulo1.html">Articulo 1</a></li>
+                    <li><a href="Articulo2.html">Articulo 2</a></li>
+                    <li><a href="Articulo3.html">Articulo 3</a></li>
+                    <li><a href="Articulo4.html">Articulo 4</a></li>
+                    <li><a href="#carrito" onclick="mostrarCarrito()"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                    <li><a href="#footer">Contacto</a></li>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>📞 +1 (555) 123-4567</li>
+                    <li>✉️ info@tiendaonline.edu</li>
+                    <li>📍 Calle Principal 123, Ciudad</li>
+                    <li>🕒 Lun-Vie: 9AM-6PM</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Suscríbete para recibir ofertas exclusivas</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tienda Online Educativa. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <div id="carrito-panel">
+        <div class="carrito-content">
+            <button class="close-carrito" onclick="cerrarCarrito()">×</button>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-footer">
+                <label for="direccion-envio">Dirección de envío</label>
+                <textarea id="direccion-envio" placeholder="Escribe tu dirección completa"></textarea>
+                <div class="carrito-total">Total: <span id="carrito-total">$0.00</span></div>
+                <div class="carrito-actions">
+                    <button type="button" onclick="generarRecibo()">Enviar recibo por WhatsApp</button>
+                    <button type="button" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tienda.js"></script>
+    
+</body>
+</html>
